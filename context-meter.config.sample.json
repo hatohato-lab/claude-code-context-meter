@@ -1,0 +1,6 @@
+{
+  "limit": 1000000,
+  "projects_dir": "",
+  "warn_pct": 70,
+  "compact_warn": 2
+}
