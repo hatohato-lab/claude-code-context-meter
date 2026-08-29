@@ -97,7 +97,7 @@ usage 3項目の合算／末尾優先／custom-title の優先順位／指示文
 |---|---|
 | [claude-code-hikitsugi](https://github.com/hatohato-lab/claude-code-hikitsugi) | 乗り換え時の引き継ぎ（過去→未来） |
 | [claude-code-rules-sync](https://github.com/hatohato-lab/claude-code-rules-sync) | ルール変更の全チャット通知（放送） |
-| [claude-code-yubin](https://github.com/hatohato-lab/claude-code-yubin) | チャット間のファイル郵便（双方向） |
+| [claude-code-kokuban](https://github.com/hatohato-lab/claude-code-kokuban) | チャット間の黒板（双方向） |
 | **claude-code-context-meter**（本リポジトリ） | 各チャットの容量の見える化＝**乗り換えどきの判断材料** |
 
 ## 制限
