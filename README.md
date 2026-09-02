@@ -9,6 +9,10 @@ actual display name — in one Markdown table. Works on both Windows and
 Linux (devcontainers / Codespaces), standard library only.
 The rest of this README is in Japanese.
 
+## しくみ（図解）
+
+![しくみ](docs/しくみ.svg)
+
 ## 出力例
 
 ```
