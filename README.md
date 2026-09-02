@@ -91,20 +91,25 @@ usage 3項目の合算／末尾優先／custom-title の優先順位／指示文
 | 5 | PowerShell 出力が CP932 で、日本語パス入りコマンドラインのデコードに失敗 | PowerShell に UTF-8 を宣言させ、バイト列で受けて多段デコード |
 | 6 | 作業フォルダ名の大文字小文字差で projects フォルダを取り逃す | 大文字小文字を無視した突き合わせで吸収 |
 
-## 関連ツール（セッション運用ファミリー）
-
-| ツール | 役割 |
-|---|---|
-| [claude-code-hikitsugi](https://github.com/hatohato-lab/claude-code-hikitsugi) | 乗り換え時の引き継ぎ（過去→未来） |
-| [claude-code-rules-sync](https://github.com/hatohato-lab/claude-code-rules-sync) | ルール変更の全チャット通知（放送） |
-| [claude-code-kokuban](https://github.com/hatohato-lab/claude-code-kokuban) | チャット間の黒板（双方向） |
-| **claude-code-context-meter**（本リポジトリ） | 各チャットの容量の見える化＝**乗り換えどきの判断材料** |
 
 ## 制限
 
 - 生ログ・`sessions/` の形式は Claude Code の非公開仕様に依存します（変わっても壊れず、値が出なくなるだけです）
 - `--resume` の無い新規チャットへのID割り当ては推定です（表に「(推定)」と明示）
 - 上限値はモデルにより異なります。既定は 1,000,000（1M コンテキスト）で、設定で変更してください
+
+## 関連ツール（Claude Code 運用ファミリー）
+
+同じ思想（機械判定の eval 同梱・フェイルオープン・判断は人間に返す）で作った道具の家族です。
+
+| ツール | 役割 |
+|---|---|
+| [claude-code-hikitsugi](https://github.com/hatohato-lab/claude-code-hikitsugi) | チャット乗り換え時の引き継ぎ（過去→未来） |
+| [claude-code-rules-sync](https://github.com/hatohato-lab/claude-code-rules-sync) | ルール変更の全チャット通知（放送） |
+| [claude-code-kokuban](https://github.com/hatohato-lab/claude-code-kokuban) | チャット間の黒板（双方向の連絡） |
+| **claude-code-context-meter**（本リポジトリ） | 各チャットの容量の見える化（乗り換えどきの判断材料） |
+| [claude-code-version-guard](https://github.com/hatohato-lab/claude-code-version-guard) | Claude Code 本体のバージョンの遅れの見張り |
+| [kaizen-map](https://github.com/hatohato-lab/kaizen-map) | システムの地図と改善候補を1枚のHTMLに |
 
 ## ライセンス
 
